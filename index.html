@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     </head>
+    <!-- NECESSARY LIBRARIES -->
     <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     
@@ -10,13 +11,16 @@
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
+
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
+            <!-- PUT YOUR 3D ANIMATIONS HERE -->
         <a-assets>
             <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
+        <!-- ADD YOUR MARKERS HERE -->
         <a-marker type='barcode' value='7'>
             <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
