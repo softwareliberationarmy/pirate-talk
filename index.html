@@ -9,9 +9,6 @@
     
     <!-- add this script in order to load a large set of 3D model extensions-->
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    <script type="text/javascript">
-        document.getElementById("test").innerHTML = "PRESTO";
-    </script>
     
     <body style='margin : 0px; overflow: hidden;'>
         <div id="test">HERE IS SOME TEXT!</div>
@@ -38,5 +35,8 @@
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
         </a-scene>
+        <script type="text/javascript">
+            document.getElementById("test").innerHTML = "PRESTO";
+        </script>
     </body>
 </html>
